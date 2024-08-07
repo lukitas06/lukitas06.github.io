@@ -5,3 +5,7 @@ Welcome to my Data Science Portfolio! This repository showcases a collection of 
 
 ## Contents
 The repository is organized into several directories, each containing a distinct project. Below is a summary of the key projects included:
+
+1. **Sentiment Analysis on Social Media**
+   - Analyzing public sentiment on Twitter using natural language processing (NLP) techniques.
+   - [View Project](./sentiment-analysis)
