@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.edb171fc.css",
-    "main.js": "/static/js/main.d6459bca.js",
-    "static/js/48.ff9eea67.chunk.js": "/static/js/48.ff9eea67.chunk.js",
-    "static/media/report1.md": "/static/media/report1.61599c377ebf9acca029.md",
+    "main.css": "/static/css/main.769d3fca.css",
+    "main.js": "/static/js/main.ba2e1549.js",
+    "static/js/41.1a36861d.chunk.js": "/static/js/41.1a36861d.chunk.js",
+    "static/js/815.ba66bfa1.chunk.js": "/static/js/815.ba66bfa1.chunk.js",
+    "static/media/Heart_Disease.md": "/static/media/Heart_Disease.8fea137e76c435a0aa65.md",
+    "static/media/Housing.md": "/static/media/Housing.b52404574ca1c2e9ec89.md",
     "index.html": "/index.html",
-    "main.edb171fc.css.map": "/static/css/main.edb171fc.css.map",
-    "main.d6459bca.js.map": "/static/js/main.d6459bca.js.map"
+    "main.769d3fca.css.map": "/static/css/main.769d3fca.css.map",
+    "main.ba2e1549.js.map": "/static/js/main.ba2e1549.js.map"
   },
   "entrypoints": [
-    "static/css/main.edb171fc.css",
-    "static/js/main.d6459bca.js"
+    "static/css/main.769d3fca.css",
+    "static/js/main.ba2e1549.js"
   ]
 }
