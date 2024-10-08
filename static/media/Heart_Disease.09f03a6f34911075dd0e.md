@@ -143,3 +143,21 @@ Se construyó un modelo de clasificación de Naive Bayes para predecir si un pac
 
 **Performance en conjunto de prueba**
 ![Performance en conjunto de prueba](/blog_cards_imgs/heart_disease/performance_test.png)
+
+# Proceso en RapidMiner
+
+![Proceso en RapidMiner](/blog_cards_imgs/heart_disease/process.png)
+
+- En el subproceso "Replace and Remove" se modificaron los valores 2,3,4 para que tomen valor 1. De esta manera se consigue una variable binomial, que es el tipo de variable con la que se trabaja mejor en este caso.
+- El operador cross-validation se utilizó con el modelo de Naive Bayes, y los parámetros fueron los siguientes
+  - "Number of folds": 10
+  - sampling type: automatic
+  - use local random seed activado y con valor 1992 (por defecto)
+
+# Links Importantes
+
+## Preparación de los datos:
+
+> [Estandarización de los datos](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html)
+
+> [Transformar distribuición a normal](https://machinelearningmastery.com/how-to-transform-data-to-fit-the-normal-distribution/)
