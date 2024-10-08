@@ -1,0 +1,60 @@
+.app-container{
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.blogs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+.blog-section-div{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.blog-title{
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+}
+.blog-section-div img{
+    height: 100%;
+    margin:0;
+}
+.blog-text-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.blog-text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.section-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.blog-card{
+background-color: #404040;    
+}
+.read-more:hover{
+    color: rgb(183, 49, 49);
+}
+.differences-card{
+    border: 2px solid #71717174;
+}
+.differences-card .title{
+
+    background-color: rgb(16, 25, 33);
+
+}
