@@ -1,0 +1,75 @@
+.reactMarkDown h2,h3,h4,h5,h6,p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.reactMarkDown h1{
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    font-size: 2.5em;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.407); */
+}
+.reactMarkDown h2{
+    padding-top: 1em;
+    font-size: 1.75em;
+}
+.reactMarkDown p,li{
+    font-size: 1.1em;
+}
+.reactMarkDown li{
+    list-style: disc;
+}
+.reactMarkDown ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
+.reactMarkDown li ul {
+    margin-left: 2em;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.reactMarkDown li ul li {
+list-style:square;
+}
+/* .reactMarkDown h1+ul{
+    border-radius: 10px;
+    border: 1px solid rgba(173, 52, 52, 0.507);
+}
+.reactMarkDown h2+ul{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.507);}
+.reactMarkDown p+ul{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.507);} */
+
+.reactMarkDown ul ul{
+    border: none;
+}
+.reactMarkDown img{
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    max-width: 80%;
+}
+
+
+
+.reactMarkDown blockquote{
+    background-color: rgb(254, 255, 247);
+    padding: 5px;
+    color: rgb(72, 71, 71);
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.reactMarkDown blockquote:hover{
+    background-color: rgb(72, 71, 71);
+    color: aliceblue;
+        
+}
+.reactMarkDown blockquote p{
+    margin: 0;
+}
+
+
