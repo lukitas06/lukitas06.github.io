@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[41],{41:(e,s,t)=>{e.exports=t.p+"static/media/Heart_Disease.09f03a6f34911075dd0e.md"}}]);

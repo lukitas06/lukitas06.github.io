@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ffb9f37.css",
-    "main.js": "/static/js/main.24bd4321.js",
-    "static/js/41.6dcf89b7.chunk.js": "/static/js/41.6dcf89b7.chunk.js",
-    "static/js/815.ba66bfa1.chunk.js": "/static/js/815.ba66bfa1.chunk.js",
-    "static/js/911.598eac11.chunk.js": "/static/js/911.598eac11.chunk.js",
-    "static/media/Heart_Disease.md": "/static/media/Heart_Disease.09f03a6f34911075dd0e.md",
-    "static/media/Housing.md": "/static/media/Housing.b52404574ca1c2e9ec89.md",
-    "static/media/Sonar.md": "/static/media/Sonar.92478f5af6f47c4366dd.md",
+    "main.css": "/static/css/main.4d7540fe.css",
+    "main.js": "/static/js/main.9a7c96cf.js",
+    "static/js/41.592cc3bc.chunk.js": "/static/js/41.592cc3bc.chunk.js",
+    "static/js/815.87d083d0.chunk.js": "/static/js/815.87d083d0.chunk.js",
+    "static/js/911.3cb97f21.chunk.js": "/static/js/911.3cb97f21.chunk.js",
+    "static/media/Heart_Disease.md": "/static/media/Heart_Disease.00c4355a13cb4c804960.md",
+    "static/media/Housing.md": "/static/media/Housing.5f5e677bfe1b2df1b119.md",
+    "static/media/Sonar.md": "/static/media/Sonar.4857bbb1bac73c5d16b3.md",
     "index.html": "/index.html",
-    "main.6ffb9f37.css.map": "/static/css/main.6ffb9f37.css.map",
-    "main.24bd4321.js.map": "/static/js/main.24bd4321.js.map"
+    "main.4d7540fe.css.map": "/static/css/main.4d7540fe.css.map",
+    "main.9a7c96cf.js.map": "/static/js/main.9a7c96cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ffb9f37.css",
-    "static/js/main.24bd4321.js"
+    "static/css/main.4d7540fe.css",
+    "static/js/main.9a7c96cf.js"
   ]
 }

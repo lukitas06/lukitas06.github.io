@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[815],{815:(e,o,s)=>{e.exports=s.p+"static/media/Housing.b52404574ca1c2e9ec89.md"}}]);
