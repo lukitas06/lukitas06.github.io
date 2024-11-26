@@ -3,6 +3,10 @@
 ## **Descripción**
 
 Este proyecto utiliza el conjunto de datos UCI Sonar, que contiene mediciones de señales acústicas generadas por un sonar para detectar la presencia de objetos sumergidos, como minas submarinas o rocas. El objetivo principal es desarrollar un modelo de machine learning que sea capaz de diferenciar entre estos dos tipos de objetos, mejorando así la precisión en la detección de minas y contribuyendo a aplicaciones tanto civiles como militares para la seguridad en aguas profundas.
+<<<<<<< HEAD
+=======
+El énfasis de este proyecto está en la exploración y elección de un algoritmo de feature selection, que permita elegir unicamente los atributos que influyen más en el algoritmo de machine learning a utilizar. Por lo tanto demás temas serán pasados por alto.
+>>>>>>> lucas_branch
 
 ## **Contexto**
 
@@ -19,8 +23,11 @@ Este proyecto tiene como base el estudio y la aplicación de algoritmos de machi
   - Utilizar técnicas de feature engineering para lograr identificar qué atributos son más idóneos para trabajar, reduciendo la complejidad y aumentando la precisión del modelo.s
   - Aplicar técnicas de normalización, detección y manejo de valores atípicos, y particionamiento de datos para asegurar que el modelo de machine learning pueda generalizar bien en nuevos datos.
 
+<<<<<<< HEAD
 - Desarrollo de modelos de machine learning: Implementar y comparar diferentes algoritmos de clasificación, como K-Nearest Neighbors (KNN), Support Vector Machines (SVM), y Random Forests, evaluando su precisión y capacidad para detectar minas submarinas de manera efectiva.
 
+=======
+>>>>>>> lucas_branch
 - Evaluación y validación: Utilizar métricas de rendimiento como precisión, sensibilidad y especificidad para validar los modelos desarrollados, asegurando que el sistema tenga un bajo índice de falsos positivos (clasificar una roca como una mina) y un alto índice de detección de minas.
 
 # Fase de análisis de datos

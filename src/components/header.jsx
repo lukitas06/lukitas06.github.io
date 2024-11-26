@@ -28,12 +28,12 @@ export default function Header() {
   return (
     <div className={`header-div sticky ${scrollDirection === "down" ? " -top-20" : "top-0"} transition-all duration-500`}>
       <div className='logo-div'>
-        <h1 className='font-bold text-2xl tracking-wider'>Lucas Alegre Portfolio</h1>
+        <h1 className='font-bold text-2xl tracking-wider'>Portfolio</h1>
       </div>
       <div className='links-div'>
         <ul>
-          <li className='page-link'><Link to="/">HOME</Link></li>
-          <li className='page-link'><Link to="/about">ABOUT</Link></li>
+          <li className='page-link'> <Link to="/">HOME</Link></li>
+          {/* <li className='page-link'><Link to="/about">ABOUT</Link></li> */}
           <li className='page-link'><Link to="/blog">BLOG</Link></li>
         </ul>
       </div>

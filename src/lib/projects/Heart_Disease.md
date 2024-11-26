@@ -3,13 +3,21 @@
 ## **Información del dataset**
 
 El dataset original contiene 76 atributos, pero todos los experimentos realizados utilizan solo 14, los cuales van a ser explicados mas adelante.
+<<<<<<< HEAD
 En este caso se utilizó el dataset de Cleveland ya que es el mas estudiado y utilizado. Cabe destacar que se eligió el que ya está procesado, para enforcarnos mas en lo que sería la creación del modelo.
+=======
+En este caso se utilizó el dataset de Cleveland ya que es el mas estudiado y utilizado. Cabe destacar que se eligió el que ya está procesado, para enfocarnos más en la creación y validación del modelo.
+>>>>>>> lucas_branch
 
 **Link al repositorio UCI:** [Dataset Heart Disease](https://archive.ics.uci.edu/dataset/45/heart+disease)
 
 ## **Descripción**
 
+<<<<<<< HEAD
 Este proyecto tiene como objetivo predecir la probabilidad de que un paciente padezca una enfermedad cardíaca, utilizando un conjunto de datos clínicos. Implementé técnicas de machine learning para entrenar modelos que identifiquen patrones clave en variables como la presión arterial, nivel de colesterol, edad, y otros factores de riesgo. A lo largo del proceso, se realizaron tareas de limpieza de datos, análisis exploratorio, y se emplearon diferentes algoritmos de clasificación como Logistic Regression, Random Forest y Support Vector Machine para obtener predicciones precisas. Finalmente, se evaluaron los modelos mediante métricas como precisión, recall y AUC para determinar el rendimiento óptimo.
+=======
+Este proyecto tiene como objetivo predecir la probabilidad de que un paciente padezca una enfermedad cardíaca, utilizando un conjunto de datos clínicos. Se implementaron técnicas de machine learning para entrenar modelos que identifiquen patrones clave en variables como la presión arterial, nivel de colesterol, edad, y otros factores de riesgo. A lo largo del proceso, se realizaron tareas de limpieza de datos, análisis exploratorio, y se emplearon diferentes algoritmos de clasificación como Logistic Regression, Random Forest y Support Vector Machine para obtener predicciones precisas. Finalmente, se evaluaron los modelos mediante métricas como precisión, recall y AUC para determinar el rendimiento óptimo.
+>>>>>>> lucas_branch
 
 ## **Objetivos**
 
@@ -21,7 +29,12 @@ Este proyecto tiene como objetivo predecir la probabilidad de que un paciente pa
 # **Fase de análisis de datos**
 
 Se analizaron los datos del dataset para lograr una mayor comprensión del contexto del problema, entender las distribuciones de las variables e identificar la variable de salida (variable a predecir).
+<<<<<<< HEAD
 La variable a predecir es _num_, la cual es el diagnóstico de cardiopatía. En el dataset original toma valores de 0 a 4, indicando la ausencia de cardiopatía (cero) y presencia (demás valores). Para simplificarlo, se modificó la variable para que sea binomial, 0 para ausencia y 1 para presencia.
+=======
+
+La variable a predecir es **_num_**, la cual es el diagnóstico de cardiopatía. En el dataset original toma valores de 0 a 4, indicando la ausencia de cardiopatía (cero) y presencia (demás valores). Para simplificarlo, se modificó la variable para que sea binomial, 0 para ausencia y 1 para presencia.
+>>>>>>> lucas_branch
 
 - age: Edad en años
 - sex
@@ -71,7 +84,11 @@ Un número mayor de vasos afectados implica una severidad mayor de la cardiopat�
 
 ## **Tipos de distribuciones**
 
+<<<<<<< HEAD
 Se intentan visualizar los distintos tipos de distribuciones que siguen los atributos, para lograr una comprensión mas detallada de los mismos y asi poder aplicar métodos de normalizacion o escalerización si es necesario.
+=======
+Se intentan visualizar los distintos tipos de distribuciones que siguen los atributos, para lograr una comprensión mas detallada de los mismos y asi poder aplicar métodos de normalizacion si es necesario.
+>>>>>>> lucas_branch
 
 - Los atributos _trestbps_, _chol_ y _talach_ parecen seguir una distribución Gaussiana, aunque un poco desplazadas hacia uno de los lados en el eje de las x.
 
@@ -79,6 +96,14 @@ Se intentan visualizar los distintos tipos de distribuciones que siguen los atri
 
 - Los demás atributos son de tipo nominal y binomiales.
 
+<<<<<<< HEAD
+=======
+![Distribuciones](/blog_cards_imgs/heart_disease/distributions1.png)
+![Distribuciones](/blog_cards_imgs/heart_disease/distributions2.png)
+![Distribuciones](/blog_cards_imgs/heart_disease/distributions3.png)
+![Distribuciones](/blog_cards_imgs/heart_disease/distributions4.png)
+
+>>>>>>> lucas_branch
 ## **Valores faltantes**
 
 No se encontraron valores faltantes en el dataset.
@@ -89,6 +114,10 @@ Se realizó una matríz de correlación con los atributos de tipo real del datas
 ![Matríz de correlación](/blog_cards_imgs/heart_disease/correlation.png)
 
 - Se puede observar que existe una correlación negativa entre la edad y talach (valor máximo de pulsaciones) lo cual puede ser debido a que cuanto mayor edad tenga una persona su salud física empeora y el ritmo cardíaco disminuye.
+<<<<<<< HEAD
+=======
+  De igual manera, se decide no realizar ninguna medida, ya que la correlacion no es tan alta.
+>>>>>>> lucas_branch
 - Los demás atributos parecen no tener una relación directa entre ellos.
 
 ## **Relaciones más importantes**
@@ -128,12 +157,20 @@ A partir del uso de RapidMiner, con el fin de identificar los outliers, se utili
 
 # Fase de construcción del modelo
 
+<<<<<<< HEAD
 Se construyó un modelo de clasificación de Naive Bayes para predecir si un paciente tiene un estrechamiento menor a 50% o mayor a 50%.
+=======
+## Elección del modelo
+
+Debido a que el problema planteado en este proyecto es de tipo clasificación, se decidió usar Regresión Logistica, en un principio por su interpretabilidad y análisis inicial.
+También se decidió implementar Random Forest, el cual aporta más precisión a la predicción y reduce el sobreajuste a los datos.
+>>>>>>> lucas_branch
 
 ## Pasos
 
 - Se aplicó un "shuffle" al dataset para randomizar los datos y evitar sesgos en el modelo.
 - Se dividió el dataset en dos conjuntos: uno de entrenamiento (80%) y otro de prueba (20%).
+<<<<<<< HEAD
 - Al dataset de entrenamiento se le aplicó cross validation con Naive Bayes, y se creó el modelo.
 - Se evaluó la performance del modelo en el subconjunto de validación, utilizando error cuadrático medio, correlación y correlación cuadrática.
 - Se evaluó la performance del modelo en el conjunto de prueba (datos nuevos), para visualizar el comportamiento del modelo.
@@ -143,16 +180,30 @@ Se construyó un modelo de clasificación de Naive Bayes para predecir si un pac
 
 **Performance en conjunto de prueba**
 ![Performance en conjunto de prueba](/blog_cards_imgs/heart_disease/performance_test.png)
+=======
+- Al dataset de entrenamiento se le aplicaron dos cross-validation en dos subprocesos distintos. Uno con Regresión Logística y otro con Random Forest.
+- Al dataset de testeo se le aplicaron los modelos obtenidos del punto anterior.
+- Se evaluó la performance de ambos modelos en el conjunto de testeo.
+
+**Performance de regresión logística en conjunto de prueba**
+![Performance en conjunto de prueba](/blog_cards_imgs/heart_disease/performance_test_logistic.png)
+
+**Performance de random forest en conjunto de prueba**
+![Performance en cross validation](/blog_cards_imgs/heart_disease/performance_test_forest.png)
+>>>>>>> lucas_branch
 
 # Proceso en RapidMiner
 
 ![Proceso en RapidMiner](/blog_cards_imgs/heart_disease/process.png)
 
 - En el subproceso "Replace and Remove" se modificaron los valores 2,3,4 para que tomen valor 1. De esta manera se consigue una variable binomial, que es el tipo de variable con la que se trabaja mejor en este caso.
+<<<<<<< HEAD
 - El operador cross-validation se utilizó con el modelo de Naive Bayes, y los parámetros fueron los siguientes
   - "Number of folds": 10
   - sampling type: automatic
   - use local random seed activado y con valor 1992 (por defecto)
+=======
+>>>>>>> lucas_branch
 
 # Links Importantes
 
