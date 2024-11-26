@@ -7,8 +7,10 @@ import { useRef, useState, useEffect } from 'react';
 export default function Landing() {
 
     const navigate = useNavigate();
-    const landingRef = useRef();
-    const isVisibleProyects = useIsVisible(landingRef);
+    const proyectRef = useRef();
+    const isVisibleProyects = useIsVisible(proyectRef);
+    const teoricRef = useRef();
+    const isVisibleTeoric = useIsVisible(teoricRef);
 
     const goToBlog = (url) => {
         navigate(`/projects/${url}`);
@@ -30,12 +32,19 @@ export default function Landing() {
 
                 </div>
                 <h1 className='landing-title '>Proyectos básicos</h1>
-                <div ref={landingRef} className={`flex flex-row gap-10  p-10 snap-x snap-mandatory overflow-x-scroll  w-full items-center transition-opacity ease-in duration-1000  ${isVisibleProyects ? "opacity-100" : "opacity-0"} `}  >
+                <div ref={proyectRef} className={`flex flex-row gap-10  p-10 snap-x snap-mandatory overflow-hidden overflow-x-scroll   w-full items-center transition-opacity ease-in duration-1000  ${isVisibleProyects ? "opacity-100" : "opacity-0"} `}  >
                     <Card title='Housing' img='/background_projects/housing.jpg' onClick={() => goToBlog('Housing')} description="Proyecto enfocado en el análisis de atributos y exploración de modelos de regresión." />
                     <Card title='Heart Disease' img='/background_projects/heart_disease.jpg' onClick={() => goToBlog('Heart_Disease')} description="Problema de clasificación. El enfoque se da en la preparación de los datos y elección de un modelo de tipo clasificación binomial" />
                     <Card title='Sonar' img='/background_projects/sonar.jpg' onClick={() => goToBlog('Sonar')} description="Problema de tipo clasificación. El enfoque se da en la exploración y elección de algoritmos de feature selection. " />
-                    <Card title='Sonar' img='/background_projects/sonar.jpg' onClick={() => goToBlog('Sonar')} description="Problema de tipo clasificación. El enfoque se da en la exploración y elección de algoritmos de feature selection. " />
-                    <Card title='Sonar' img='/background_projects/sonar.jpg' onClick={() => goToBlog('Sonar')} description="Problema de tipo clasificación. El enfoque se da en la exploración y elección de algoritmos de feature selection. " />
+                    <Card title='Titanic' img='/background_projects/titanic.jpeg' onClick={() => goToBlog('Titanic')} description="Aborda un problema de tipo clasificación binaria. El objetivo principal es predecir si un pasajero sobrevivió o no al hundimiento del Titanic." />
+
+                </div>
+                <h1 className='landing-title'>Explora nuestro marco teórico</h1>
+                <div ref={teoricRef} className={`flex flex-row gap-10  p-10 snap-x snap-mandatory overflow-x-scroll  w-full items-center transition-opacity ease-in duration-1000  ${isVisibleTeoric ? "opacity-100" : "opacity-0"} `}>
+                    <Card title="Preparación de los datos" img="/preprocessing.jpg" onClick={() => goToBlog('Preprocessing')} description="Aprende sobre las diferentes herramientas y técnicas que se utilizan como parte de la preparación de los datos, en el proceso de creación de un modelo de Machine Learning." > </Card>
+                    <Card title="Supervisado vs no supervisado" img="/supervised_unsupervised.jpg" onClick={() => goToBlog('Supervised_Unsupervised')} description="Lee y aprende sobre las características, diferencias y casos de uso de los modelos supervisados y no supervisados de Machine Learning." > </Card>
+                    <Card title="Algoritmos no supervisados" img="" onClick={() => goToBlog('Unsupervised')} description="Lee y aprende sobre las características y casos de uso de los modelos no supervisados de Machine Learning." > </Card>
+                    <Card title="Algoritmos supervisados" img="" onClick={() => goToBlog('Supervised')} description="Explora y aprende sobre modelos supervisados de Machine Learning" > </Card>
 
                 </div>
             </div>
@@ -48,15 +57,15 @@ function Card({ title, img, onClick, description }) {
         <div className="w-3/12 shrink-0 flex flex-col snap-center rounded-xl shadow-md" onClick={onClick}>
             <div className='relative rounded-xl transition duration-300 hover:transform hover:scale-110'>
                 <div className='project-img'>
-                    <img src={img} alt="project" />
+                    <img className='' src={img} alt="project" />
                 </div>
                 <div className='project-text'>
-                    <h2>{title}</h2>
+                    <h2 className='text-center'>{title}</h2>
                 </div>
 
                 <div className='px-8 py-10 flex flex-col items-center absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition duration-800  bg-white text-black'>
-                    <h2 className='font-bold text-xl'>{title}</h2>
-                    <p className='text-center font-medium text-gray-500 text-lg'>{description}</p>
+                    <h2 className='text-center font-bold text-xl'>{title}</h2>
+                    <p className='text-center font-medium text-gray-500 text-lg h-fit'>{description}</p>
                 </div>
             </div>
         </div>
