@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d7540fe.css",
-    "main.js": "/static/js/main.9a7c96cf.js",
+    "main.css": "/static/css/main.827d30dd.css",
+    "main.js": "/static/js/main.b43cf8ad.js",
     "static/js/41.592cc3bc.chunk.js": "/static/js/41.592cc3bc.chunk.js",
     "static/js/815.87d083d0.chunk.js": "/static/js/815.87d083d0.chunk.js",
+    "static/js/746.6c2e599b.chunk.js": "/static/js/746.6c2e599b.chunk.js",
     "static/js/911.3cb97f21.chunk.js": "/static/js/911.3cb97f21.chunk.js",
+    "static/js/674.9f37f815.chunk.js": "/static/js/674.9f37f815.chunk.js",
+    "static/js/190.23e75254.chunk.js": "/static/js/190.23e75254.chunk.js",
     "static/media/Heart_Disease.md": "/static/media/Heart_Disease.00c4355a13cb4c804960.md",
+    "static/media/Titanic.md": "/static/media/Titanic.f20ffe18cf185738236e.md",
     "static/media/Housing.md": "/static/media/Housing.5f5e677bfe1b2df1b119.md",
     "static/media/Sonar.md": "/static/media/Sonar.4857bbb1bac73c5d16b3.md",
+    "static/media/Supervised_Unsupervised.md": "/static/media/Supervised_Unsupervised.ed0742733bb506e61a02.md",
+    "static/media/Preprocessing.md": "/static/media/Preprocessing.dc1ae412df3edce908ae.md",
     "index.html": "/index.html",
-    "main.4d7540fe.css.map": "/static/css/main.4d7540fe.css.map",
-    "main.9a7c96cf.js.map": "/static/js/main.9a7c96cf.js.map"
+    "main.827d30dd.css.map": "/static/css/main.827d30dd.css.map",
+    "main.b43cf8ad.js.map": "/static/js/main.b43cf8ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d7540fe.css",
-    "static/js/main.9a7c96cf.js"
+    "static/css/main.827d30dd.css",
+    "static/js/main.b43cf8ad.js"
   ]
 }

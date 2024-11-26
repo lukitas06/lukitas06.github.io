@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[190],{190:(e,f,t)=>{e.exports=t.p+"static/media/Titanic.f20ffe18cf185738236e.md"}}]);
