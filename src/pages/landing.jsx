@@ -43,8 +43,6 @@ export default function Landing() {
                 <div ref={teoricRef} className={`flex flex-row gap-10  p-10 snap-x snap-mandatory overflow-x-scroll  w-full items-center transition-opacity ease-in duration-1000  ${isVisibleTeoric ? "opacity-100" : "opacity-0"} `}>
                     <Card title="Preparación de los datos" img="/preprocessing.jpg" onClick={() => goToBlog('Preprocessing')} description="Aprende sobre las diferentes herramientas y técnicas que se utilizan como parte de la preparación de los datos, en el proceso de creación de un modelo de Machine Learning." > </Card>
                     <Card title="Supervisado vs no supervisado" img="/supervised_unsupervised.jpg" onClick={() => goToBlog('Supervised_Unsupervised')} description="Lee y aprende sobre las características, diferencias y casos de uso de los modelos supervisados y no supervisados de Machine Learning." > </Card>
-                    <Card title="Algoritmos no supervisados" img="" onClick={() => goToBlog('Unsupervised')} description="Lee y aprende sobre las características y casos de uso de los modelos no supervisados de Machine Learning." > </Card>
-                    <Card title="Algoritmos supervisados" img="" onClick={() => goToBlog('Supervised')} description="Explora y aprende sobre modelos supervisados de Machine Learning" > </Card>
 
                 </div>
             </div>
