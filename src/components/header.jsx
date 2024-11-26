@@ -33,7 +33,7 @@ export default function Header() {
       <div className='links-div'>
         <ul>
           <li className='page-link'> <Link to="/">HOME</Link></li>
-          <li className='page-link'><Link to="/about">ABOUT</Link></li>
+          {/* <li className='page-link'><Link to="/about">ABOUT</Link></li> */}
           <li className='page-link'><Link to="/blog">BLOG</Link></li>
         </ul>
       </div>
