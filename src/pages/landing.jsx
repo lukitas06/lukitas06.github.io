@@ -39,7 +39,7 @@ export default function Landing() {
                     <Card title='Sonar' img='/background_projects/sonar.jpg' onClick={() => goToBlog('Sonar')} description="Problema de tipo clasificación. El enfoque se da en la exploración y elección de algoritmos de feature selection. " />
                     <Card title='Titanic' img='/background_projects/titanic.jpeg' onClick={() => goToBlog('Titanic')} description="Aborda un problema de tipo clasificación binaria. El objetivo principal es predecir si un pasajero sobrevivió o no al hundimiento del Titanic." />
                     <Card title='Boston' img='/background_projects/housing.jpg' onClick={() => goToBlog('Boston')} description="Problema de tipo regresión. Se enfoca en modelar cómo las características de un área geográfica (suburbio) influyen en el precio medio de las viviendas." />
-
+                    <Card title='Enfermedad Renal Crónica (ERC)' img='/background_projects/erc.jpg'  onClick={() => goToBlog('ERC')} description="Problema de tipo clasificación binaria. El objetivo es identificar la presencia o ausencia de la enfermedad renal crónica (ERC) a partir de parámetros médicos obtenidos de pacientes." />
                 </div>
                 <h1 className='landing-title'>Explora nuestro marco teórico</h1>
                 <h1 className='font-semibold'>¡Desliza para aprender! </h1>
@@ -47,6 +47,7 @@ export default function Landing() {
                 <div ref={teoricRef} className={`flex flex-row gap-10  p-10 snap-x snap-mandatory overflow-x-scroll  w-full items-center transition-opacity ease-in duration-1000  ${isVisibleTeoric ? "opacity-100" : "opacity-0"} `}>
                     <Card title="Preparación de los datos" img="/preprocessing.jpg" onClick={() => goToBlog('Preprocessing')} description="Aprende sobre las diferentes herramientas y técnicas que se utilizan como parte de la preparación de los datos, en el proceso de creación de un modelo de Machine Learning." > </Card>
                     <Card title="Supervisado vs no supervisado" img="/supervised_unsupervised.jpg" onClick={() => goToBlog('Supervised_Unsupervised')} description="Lee y aprende sobre las características, diferencias y casos de uso de los modelos supervisados y no supervisados de Machine Learning." > </Card>
+
 
                 </div>
             </div>
