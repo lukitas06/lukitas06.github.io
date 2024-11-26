@@ -50,6 +50,14 @@ export default function Landing() {
                             <h2>Sonar</h2>
                         </div>
                     </div>
+                    <div className="project-card" onClick={() => goToBlog('ERC')}>
+                        <div className='project-img'>
+                            <img src="/background_projects/erc.jpg" alt="project" />
+                        </div>
+                        <div className='project-text'>
+                            <h2>Enfermedad Renal Crónica</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* <Footer /> */}
