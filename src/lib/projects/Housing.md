@@ -96,26 +96,20 @@ El atributo CHAS sigue una distribución binomial
 
 Los demás atributos no siguen una distribución identificable a simple vista.
 
-<<<<<<< HEAD
-=======
 ![Distribuciones](/blog_cards_imgs/housing/distributions1.png)
 ![Distribuciones](/blog_cards_imgs/housing/distributions2.png)
 ![Distribuciones](/blog_cards_imgs/housing/distributions3.png)
 ![Distribuciones](/blog_cards_imgs/housing/distributions4.png)
 ![Distribuciones](/blog_cards_imgs/housing/distributions5.png)
 
->>>>>>> lucas_branch
 ## **Valores faltantes**
 
 No se encontraron valores faltantes en el dataset.
 
-<<<<<<< HEAD
-=======
 ## **Atributo _B_**
 
 Se decidió eliminar el atributo _B_, que indica la proporción de personas de ascendencia afroamericana por ciudad, ya que no sería moralmente correcto llegar a la conclusión de que una estadistica de esta índole incide en la predicción final. Se piensa que el porcentaje de personas afroamericanas no tendría por que influir en el precio de una casa.
 
->>>>>>> lucas_branch
 ## **Correlaciones**
 
 - Positiva entre RM y MEDV: Se decidió no eliminar el atributo RM debido a que es uno de los atributos más importantes para predecir la mediana de precios de una casa.
@@ -135,14 +129,11 @@ A partir del uso de RapidMiner, con el fin de identificar los outliers, se utili
 
 # Fase de construcción del modelo
 
-<<<<<<< HEAD
-=======
 ## Elección del modelo
 
 Debido a que el objetivo de este proyecto es predecir una variable continua, se escogió un modelo de regresión.
 La regresión lineal es adecuada para un primer modelo debido a su simplicidad e interpretabilidad. Permite ver el peso de cada característica en el precio de las viviendas, lo cual es útil para entender el problema en una etapa inicial
 
->>>>>>> lucas_branch
 ### Se construyó un modelo de regresión lineal múltiple para predecir la mediana de precios de una casa utilizando los atributos más importantes
 
 ## Pasos
@@ -162,8 +153,6 @@ La regresión lineal es adecuada para un primer modelo debido a su simplicidad e
 - Correlation: Indica cuán bien se ajustan las predicciones a los valores reales. Cuanto más cercano a 1 sea el valor de correlación, mejor será el modelo.',
 - Squared Correlation: Representa la proporción de la variación en los valores reales que es explicada por el modelo de regresión. Cuanto más cercano a 1 sea el valor de correlación cuadrática, mejor será el modelo.',
 - Squared Error: Es el error cuadrático total.Es una medida que penaliza los errores grandes de manera más severa que los errores pequeños, cuanto menor sea este valor, mejor se ajusta el modelo a los datos.'
-<<<<<<< HEAD
-=======
 
 # Pesos de las entradas en la variable de salida
 
@@ -173,4 +162,3 @@ Si se observan las distribuciones de ambos atributos con respecto a los valores 
 
 ![Pesos](/blog_cards_imgs/housing/rm_medv.png)
 ![Pesos](/blog_cards_imgs/housing/lstat_medv.png)
->>>>>>> lucas_branch
