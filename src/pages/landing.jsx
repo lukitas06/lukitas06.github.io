@@ -39,7 +39,7 @@ export default function Landing() {
                     <Card title='Sonar' img='/background_projects/sonar.jpg' onClick={() => goToBlog('Sonar')} description="Problema de tipo clasificación. El enfoque se da en la exploración y elección de algoritmos de feature selection. " />
                     <Card title='Titanic' img='/background_projects/titanic.jpeg' onClick={() => goToBlog('Titanic')} description="Aborda un problema de tipo clasificación binaria. El objetivo principal es predecir si un pasajero sobrevivió o no al hundimiento del Titanic." />
                     <Card title='Boston' img='/background_projects/housing.jpg' onClick={() => goToBlog('Boston')} description="Problema de tipo regresión. Se enfoca en modelar cómo las características de un área geográfica (suburbio) influyen en el precio medio de las viviendas." />
-
+                    <Card title='Enfermedad Renal Crónica (ERC)' img='/background_projects/erc.jpg'  onClick={() => goToBlog('ERC')} description="Problema de tipo clasificación binaria. El objetivo es identificar la presencia o ausencia de la enfermedad renal crónica (ERC) a partir de parámetros médicos obtenidos de pacientes." />
                 </div>
                 <h1 className='landing-title'>Explora nuestro marco teórico</h1>
                 <h1 className='font-semibold'>¡Desliza para aprender! </h1>
